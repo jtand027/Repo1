@@ -19,6 +19,9 @@ def find_csv_duplicates(csv_file):
                 for value in row:
                     value_counts[value] += 1
 
+            print(value_counts)
+
+        quit()
         # Identify duplicates
         duplicates = {value: count for value, count in value_counts.items() if count > 1}
 
@@ -36,6 +39,6 @@ def find_csv_duplicates(csv_file):
         print(f"An error occurred: {e}")
 
 # Example usage
-csv_file_path = '/Users/janderson/Desktop/IT homework/csvproject/file.csv'  
+csv_file_path = './file.csv'  
 
 find_csv_duplicates(csv_file_path)
